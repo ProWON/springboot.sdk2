@@ -6,11 +6,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class CommonProperties {
     private String LinkID = null;
     private String SecretKey = null;
-    private boolean isTest = false;
-    private boolean useStaticIP = false;
-    private boolean useGAIP = false;
-    private boolean useLocalTimeYN = true;
-    private boolean isIPRestrectOnOff = true;
+    private Boolean isTest = false;
+    private Boolean useStaticIP = false;
+    private Boolean useGAIP = false;
+    private Boolean useLocalTimeYN = true;
+    private Boolean isIPRestrectOnOff = true;
     
     private String AuthURL = null;
     private String ServiceURL = null;
@@ -33,45 +33,45 @@ public class CommonProperties {
         this.SecretKey = secretKey;
     }
 
-    public boolean isTest() {
+    public Boolean isTest() {
         return this.isTest;
     }
-    public void setTest(boolean isTest) {
+    public void setTest(Boolean isTest) {
         this.isTest = isTest;
     }
 
-    public boolean isUseStaticIp() {
+    public Boolean isUseStaticIp() {
         return this.useStaticIP;
     }
-    public void setUseStaticIp(boolean useStaticIP) {
+    public void setUseStaticIp(Boolean useStaticIP) {
         this.useStaticIP = useStaticIP;
     }
 
-    public boolean isUseGaIp() {
+    public Boolean isUseGaIp() {
         return useGAIP;
     }
-    public void setUseGaIp(boolean useGAIP) {
+    public void setUseGaIp(Boolean useGAIP) {
         this.useGAIP = useGAIP;
     }
 
-    public boolean isUseLocalTimeYn() {
+    public Boolean isUseLocalTimeYn() {
         return useLocalTimeYN;
     }
-    public void setUseLocalTimeYn(boolean useLocalTimeYN) {
+    public void setUseLocalTimeYn(Boolean useLocalTimeYN) {
         this.useLocalTimeYN = useLocalTimeYN;
     }
 
-    public boolean isIpRestrectOnOff() {
+    public Boolean isIpRestrectOnOff() {
         return isIPRestrectOnOff;
     }
-    public void setIpRestrectOnOff(boolean isIPRestrectOnOff) {
+    public void setIpRestrectOnOff(Boolean isIPRestrectOnOff) {
         this.isIPRestrectOnOff = isIPRestrectOnOff;
     }
 
     public String getAuthUrl() {
         return this.AuthURL;
     }
-    public void setAutUrl(String authURL) {
+    public void setAuthUrl(String authURL) {
         this.AuthURL = authURL;
     }
 

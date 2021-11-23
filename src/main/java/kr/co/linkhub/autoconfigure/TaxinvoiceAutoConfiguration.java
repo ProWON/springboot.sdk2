@@ -50,8 +50,8 @@ public class TaxinvoiceAutoConfiguration {
         taxinvoiceServiceImp.setProxyIP(commonProperties.getProxyIp());
         taxinvoiceServiceImp.setProxyPort(commonProperties.getProxyPort());
         
-        logger.info("POPBiLL Initialized TaxinvoiceService");
-
+        logger.debug("POPBiLL Initialized TaxinvoiceService");
+        
         return taxinvoiceServiceImp;
     }
 
